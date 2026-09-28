@@ -42,7 +42,7 @@ function Login() {
     }
 
 
-    var logindetails = axios.post("http://localhost:5000/login", { "emailid": email, "password": pass })
+    var logindetails = axios.post("https://nexaflow-backend-fhek.onrender.com/login", { "emailid": email, "password": pass })
     logindetails.then(function (data) {
       if (data.data === true) {
         navigate("/dashboard");
